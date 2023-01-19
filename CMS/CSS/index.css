@@ -1,0 +1,126 @@
+*{
+    /* font family and letter spacing to be used on the entire page */
+    font-family: 'Medula One';
+    letter-spacing: 0.073125em;
+}
+
+
+
+/* background image to be used*/
+body{
+    margin: 0;
+    padding: 0;
+    background: none;
+    background-image: url("../IMG/background.png");
+}
+
+/* css to position logo and logoname from line 18-27*/
+.logo{
+    margin-right: 50px;
+    display: flex;
+}
+
+.logo h2{
+    color: #b78846;
+    margin-top: 25px;
+    font-size: 35px;
+}
+
+/* css to position title of pages*/
+.header{
+    margin-top: 4px;
+    color: #b78846;
+    margin-left: 520px;
+}
+
+/* css to style navigation bar from line 37-71*/
+nav ul{
+    list-style: none;
+    background: #b78846;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul button{
+    padding: 10px 12px;
+    font-size: 1.5rem;
+    border: #000;
+    background-color: #6e5e47;
+    color: #fff;
+    margin-top: 8px;
+}
+
+nav li{
+    display: inline-flex;
+}
+
+nav a{
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    display: block;
+    padding: 25px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+nav a:hover{
+    background: #000;
+}
+
+
+/* css for welcome message*/
+.welcome{
+    color: #b78846;
+    margin-left: 30px;
+}
+ 
+/* css for login link*/
+p{
+    color: #fff;
+    background-color: transparent;
+    font-size: 30px;
+}
+
+/* css to position content in form from line 88-120*/
+.form{
+    margin: auto;
+    width: 25%;
+    border: 3px solid #b78846;
+    margin-top: 50px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    text-decoration-color: #fff;
+}
+
+.form h2{
+    color: #6e5e47;
+}
+
+.form label{
+    color: #fff;
+    font-size: 20px;
+}
+
+
+
+.form input{
+    border-color: #b78846;
+    border-width: 3px;
+    font-size: 20px;
+}
+
+input [type = submit] {
+    padding: 5px;
+    background-color: #b78846;
+    border-radius: 3px;
+  
+}
+
+/* css to make login link white in color */
+.link{
+    text-decoration: underline;
+    color: #fff;
+}
