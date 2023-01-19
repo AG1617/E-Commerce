@@ -1,0 +1,401 @@
+*{
+    /* font family and letter spacing to be used on the entire page */
+    margin: 0;
+    font-family: 'Medula One';
+    letter-spacing: 0.073125em;
+}
+
+/* Styling of the header bar starts here. Header is a div containing logo and website name as well as login, sign up and cart buttons*/
+
+.header {
+    width: 100%;
+    height: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #000;
+    color: #ddaa62;
+}
+/* For website name*/
+.header h1 {            
+    font-size: 40px;
+    float: left;
+    padding-top: 25px;
+    padding-left: 15px;
+    margin-right:45vw;
+  }
+
+/* For logo*/
+.header img {           
+    float:left;
+    width: 100px;
+    height: 100px;
+}
+
+/* Correct positioning of form and its buttons*/
+.form{
+    display: inline;
+}
+
+button {
+    margin: 45px 20px;
+    outline: none;
+}
+
+/* for login and register button display*/
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    padding: 10px 25px;
+    border: 2px solid #000;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position:relative;
+    bottom: 18px;
+    display: inline-block;
+    font-size: 25px;
+}
+
+.login, .sign-up {
+    background: #000;
+    color: #ffffff;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+}
+
+/* Login and sign-up buttons*/
+.login:hover, .sign-up:hover {      
+    background: #ddaa62;
+    color: rgb(0, 0, 0);
+    box-shadow:
+     -7px -7px 20px 0px #fff9,
+     -4px -4px 5px 0px #0001,
+     7px 7px 20px 0px #fff9,
+     4px 4px 5px 0px #0001;
+}
+
+/* For buttons dynamic animation*/
+.login:before,
+.login:after,
+.sign-up:before,
+.sign-up:after{                 
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #000;
+    transition:400ms ease all;
+}
+.login:after,
+.sign-up:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+}
+.login:hover:before,
+.login:hover:after,
+.sign-up:hover:before,
+.sign-up:hover:after{
+    width:100%;
+    transition:800ms ease all;
+}
+
+.Username{
+    position: relative;
+    display: inline;
+    font-size: 30px;
+}
+
+/* For button linking to cart page*/
+#cart_link
+{
+    color: rgba(255, 255, 255, 1);
+    font-size: 25px;
+    text-decoration: none;
+    position: absolute;
+    margin-top: 25px;
+}
+
+/* Displaying cart icon before its button*/
+#cart_link::before{
+    background-image: url("../../Images/cart.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: '';
+    height:35px;
+    width:35px;
+    display: inline-block;
+    padding-right: 25px;
+}
+#cart_link:hover{                                                 
+    color: #ddaa62;
+}
+
+/* Styling of div element to be used as container for navigationn bar*/
+.navigation-bar{                    
+    width:100%;
+    height: 45px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-style: solid;
+    border-width: 1px;
+    border-image: linear-gradient(to left, rgba(0, 0, 0, 0.1) 1%, #ffc745 50%, rgba(0, 0, 0, 0.1) 100%) 
+                100% 0 100% 0/3px 0 3px 0 stretch;
+    
+}
+
+/* div found in navigation bar which will contain the text. Is centered*/
+.nav-main{                      
+    list-style-type: none;
+    margin: 0;
+    padding-top: 12px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+/* Displaying in-line for better display. nav-main-link-selected represents currently active page*/
+.nav-main-link,
+.nav-main-link-selected{
+    display: inline-block;      
+    cursor: pointer;
+
+} 
+
+/* Styling the hyperlink text */
+.nav-main-link a,
+.nav-main-link-selected a{                     
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 25px;
+    text-decoration: none;
+    padding: 0px 25px;
+    display: inline-block;
+}
+
+/* SVG image which will be on both sides of hyperlink text to display which page user is currently on (active page)*/
+.nav-main-link-selected a::before,
+.nav-main-link-selected a::after{                                           
+    background-image: url("../../Images/sub_nav_text_decorator.svg");
+    content: '';
+    height:13px;
+    width:15px;
+    display: inline-block;
+}
+
+/* hyperlink hover animation*/
+.nav-main-link a:hover{                                                 
+    color: rgba(255, 255, 255, 1.0)
+}
+
+/* Styling the div which contains large central image maching game style*/
+.central-image{
+    background-image: url("../../Images/playing-cards.png");                
+    background-repeat: no-repeat;
+    height: 850px;
+    background-size:cover;
+    background-position: top left;
+    z-index: 1;
+    box-shadow: #000c 0 -220px 180px -140px inset, #000c 0 220px 180px -100px inset;
+}
+
+/* Div which displays a .png image which marks seperation between central image and remainder of page*/
+.separator-border{                                                  
+    height: 70px;
+    width: 100%;
+    background: url("../../Images/border-bottom.png");
+    background-position: center;
+    display: inline-block;
+    position: absolute;
+    margin-top: -30px;
+    z-index: 10;
+    
+}
+
+/* Div containing a small text intro to products sold. Is displayed on top of central image div*/
+.container{
+    z-index: 2;
+    height: 500px;
+    width: 500px;
+    margin-left: 25vw;
+}
+
+/* Styling of text in above div*/
+.container h1{
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 0.073125em;
+    font-size: 50px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 60px;
+    padding-right: 95px;
+
+}
+.container p{
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 0.073125em;
+    font-size: 20px;
+    margin-top: 15px;
+    line-height: 30px;
+    color: #ffffff;
+    text-align: left;
+}
+
+
+/* Setting size of the main-body class. Is used to display grid of products.*/
+.main-body{                                                                 
+    width: 100%;
+    height:auto;
+    background:#1b1917;
+    color: #dadada;
+}
+
+/* For text Available products and all subsequent text in main-body div*/
+.main-body h1 {
+    font-family: 'Medula One';
+    letter-spacing: 0.073125em;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 150px;
+}
+.main-body h2 {
+    font-family: 'Medula One';
+    letter-spacing: 0.073125em;
+    padding-top: 20px;
+}
+.main-body h3 {
+    font-family: 'Medula One';
+    letter-spacing: 0.073125em;
+    padding-top: 15px;
+}
+.main-body p {
+    font-family: 'Medula One';
+    letter-spacing: 0.073125em;
+    font-size: 30px;
+}
+
+/* Unordered list of products displayed using CSS grid*/
+.main-body ul {
+    list-style: none;
+    padding: 0;
+    margin: 30;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 3em;
+}
+
+/* Styling and displaying for all product images*/
+.main-body img {
+    max-width: 100%;
+    max-height: 283px;
+}
+
+/* For Add to car button and animation*/
+.main-body button{
+    font-size: 18px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 27px;
+    padding-right: 27px;
+    background-color: #ffa200;
+    cursor: pointer;
+    color: #1c1a18;
+    transition:all .2s ease;
+    border-width: 0px;
+    margin: 45px 0px;
+    opacity: 0;
+    visibility: hidden;
+}
+.main-body button:hover{
+    background: #fff;
+}
+
+.main-body li:hover .addcart{
+    transition:all .2s ease;
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Div element containig the order by and search functionalities*/
+.filter{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+/* Displaying and styling the order by dropdown list*/
+.order-text{
+    font-family: 'Medula One';
+    letter-spacing: 0.073125em;
+    font-size: 30px;
+    padding-left: 35px;
+}
+.filters{
+    width:110px;
+    height:30px;
+    font-size: 25px;
+    border-color: #E3B448;
+    border-width: 1px;
+}
+
+/* Styling and animation of search bar*/
+.search-box {
+    float: right;
+    top: 50%;
+    left: 50%;
+    background:#E3B448;
+    height: 40px;
+    border-radius: 50px;
+    margin-right: 55px;
+}
+  /* styling of input text field */
+.search-input {
+    outline: none;
+    border: none;
+    background: none;
+    width: 0;
+    padding: 0;
+    color: rgb(0, 0, 0);
+    float: left;
+    font-size: 16px;
+    transition: .3s;
+    line-height: 40px;
+}
+.search-input::placeholder {
+    color: #000000;
+}
+  /* Search icon */
+.search-btn {
+    color: rgb(0, 0, 0);
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background: #E3B448;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: .3s;
+}
+
+/* Search animation button*/
+.search-input:focus,
+.search-input:not(:placeholder-shown) {
+    width: 240px;
+    padding: 0 6px;
+}
+.search-box:hover > .search-input {
+    width: 240px;
+    padding: 0 6px;
+}
+.search-box:hover > .search-btn,
+.search-input:focus + .search-btn,
+.search-input:not(:placeholder-shown) + .search-btn {
+    background: #E3B448;
+    color: #E3B448;
+}
