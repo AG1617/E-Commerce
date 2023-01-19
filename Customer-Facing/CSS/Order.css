@@ -1,0 +1,116 @@
+*{
+    /* font family and letter spacing to be used on the entire page */
+    margin: 0;
+    font-family: 'Medula One';
+    letter-spacing: 0.073125em;
+}
+
+/* Displays and positions navigation bar container on top of page and sets its background image */
+.navigation-bar {                                                               
+    width:100%;
+    height: 55px;
+    display: block;
+    background: url("../../Images/background.png");
+    border-style: solid;
+    border-width: 1px;
+    border-image: linear-gradient(to left, rgba(0, 0, 0, 0.1) 1%, #ffc745 50%, rgba(0, 0, 0, 0.1) 100%) 
+                100% 0 100% 0/3px 0 3px 0 stretch;
+}
+
+/* Displays logo and positions it correctly in navigation bar */
+.navigation-bar img {           
+    float:left;
+    width: 55px;
+    height: 55px;
+}
+
+/* Styling of website name */
+.navigation-bar h1{                 
+    color: #B99F65;
+    display: inline-block;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+/*  div found in navigation bar which will contain the text. Is centered */
+.nav-main{                          
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 23vw;
+}
+
+.nav-main-link,
+.nav-main-link-selected{
+    display: inline-block;      
+    cursor: pointer;
+
+} 
+
+/* Styling the hyperlink text */
+.nav-main-link a,
+.nav-main-link-selected a{                     
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 25px;
+    text-decoration: none;
+    padding: 0px 25px;
+    display: inline-block;
+}
+
+/* SVG image which will be on both sides of hyperlink text to display which page user is currently on (active page)*/
+.nav-main-link-selected a::before,
+.nav-main-link-selected a::after{                                           
+    background-image: url("../../Images/sub_nav_text_decorator.svg");
+    content: '';
+    height:13px;
+    width:15px;
+    display: inline-block;
+}
+
+/* hyperlink hover animation*/
+.nav-main-link a:hover{                                                 
+    color: rgba(255, 255, 255, 1.0)
+}
+
+/* Div container element contining a HTML table element for data display */
+.main-body{                                                         
+    width: 100%;
+    height:100%;
+    background: url("../../Images/background.png");
+}
+
+/* Styling text before HTML table */
+.page-title{
+    color:#B99F65;
+    font-size: 50px;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 30px;
+}
+
+/* Div container element hosting HTML table */
+.container{                                     
+    width:1100px;
+    height: 600px;
+    position:relative;
+    background: rgba(216, 216, 216, 1.0);
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    overflow:scroll;
+}
+
+/* Styling HTML table element */
+.Past-orders{                       
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 25px;
+    border-collapse: collapse;
+}
+
+/* Styling each rows of data in HTML table */
+tr{
+    border-bottom: 1px solid rgb(58, 58, 58);
+}
