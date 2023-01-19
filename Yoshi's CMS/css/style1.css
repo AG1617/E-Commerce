@@ -1,0 +1,120 @@
+/*username and password input field*/
+.form {
+  padding: 300px 610px;
+  width: 90px;
+  height: 90px;
+  color: #ffffff;
+}
+
+/*username input field's border color*/
+.username{
+    border: 3px solid #b78846;
+}
+
+/*password input field's border color*/
+.password{
+    border: 3px solid #b78846;
+}
+
+/*Box design and in iog in page*/
+.box{
+    width: 170px;
+    height: 100px;
+    border: 3px solid #b78846;
+    margin-top: -440px;
+    margin-left: 550px;
+    color: #b78846;
+    padding: 50px 50px;
+    }
+
+/*View products order table*/
+    #viewproducts {
+        width:70%; 
+        margin-top:8%; 
+        margin-right:15%;
+        font-family: 'Medula One';
+        font-size: 18px;
+        color: #ffffff;
+        border-collapse: collapse;
+        width: 100%;
+        
+      }
+      /*table border color and padding*/
+      #viewproducts td, #viewproducts th {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+      /*username input field's border color*/
+      #viewproducts th {
+        padding-top: 1px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #ffffff;
+      }
+     /*navigation bar position and color*/
+      nav ul{
+        list-style: none;
+        background: #b78846;
+        text-align: center;
+        margin-top: -460px;
+    }
+    /*Navigation buttons*/
+    nav ul button{
+        padding: 10px 12px;
+        font-size: 1.5rem;
+        border: #000;
+        background-color: #6e5e47;
+        color: #fff;
+        margin-top: 0px;
+    }
+    
+    /*Navigation button properties*/
+    nav li{
+        display: inline-flex;
+    }
+    
+    nav a{
+        text-decoration: none;
+        color: #fff;
+        width: 100%;
+        display: block;
+        padding: 25px 20px;
+        font-family: 'Medula One';
+        font-size: 22px;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    nav a:hover{
+        background: #000;
+    }
+    /*Logo Design*/
+    .logo{
+        width: 70px;
+        height: 70px;
+      }
+    /*Page logo title*/
+     .title{
+        color:#b78846;
+        position: absolute;
+        padding: 20px 70px;
+        font-size: 35px;
+        font-family: 'Medula One';
+
+     } 
+    /*CMS title*/
+     .CMS{
+        color:#b78846;
+        position: absolute;
+        padding: 16px 650px;
+        font-size: 40px;
+        font-family: 'Medula One';
+
+     } 
+    
+    
+    
+    
+    
+    
+  
